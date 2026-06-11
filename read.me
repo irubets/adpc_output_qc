@@ -1,0 +1,13 @@
+# Config-file mode — just point at your .cfg file
+python adpc_output_qc_run.py --input adnca_qc.cfg
+
+actual example:
+cd C:\_R_shiny\adpc_output_qc_final
+python adpc_output_qc_run.py --input "c:\Users\irubets\Certara\TONC-NCA-ASTX030-35829 - Project Data\Deliverables\SDTM and ADAM\TONC-NCA-ASTX030-35829\analysis\adam\datasets\adnca-qc.cfg"
+
+# Generate a pre-filled template from your dataset, then edit and run
+python adpc_output_qc_run.py --generate-config adnca_qc.cfg --data path/to/adnca.xpt
+python adpc_output_qc_run.py --input adnca_qc.cfg
+
+# Original interactive wizard (unchanged, still works)
+python adpc_output_qc_run.py
